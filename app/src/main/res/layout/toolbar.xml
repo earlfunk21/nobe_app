@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:paddingHorizontal="10dp"
+    android:id="@+id/toolbar"
+    android:gravity="center_vertical"
+    android:background="?colorPrimary"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+        android:id="@+id/toolbarTitleTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        tools:text="Title"
+        android:fontFamily="sans-serif"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end">
+
+        <EditText
+            android:id="@+id/searchEt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:paddingRight="60dp"
+            android:paddingTop="5dp"
+            android:visibility="gone"
+            android:inputType="text"
+            android:hint="Search something"
+            android:layout_alignParentRight="true"/>
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/baseline_search_24"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="searchBtn"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+</LinearLayout>
